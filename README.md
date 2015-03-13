@@ -22,7 +22,8 @@ What is mean total number of steps taken per day?
     steps.per.day <- tapply(data$steps, data$date, "sum", na.rm = TRUE)
     hist(steps.per.day)
 
-![](/data-science-images/blob/master/hist-stepbyday.png)
+
+![Histogram Step By Day](data-science-images/hist-stepbyday.png) 
 Calculate and report the mean and median of the total number of steps
 taken per day
 
