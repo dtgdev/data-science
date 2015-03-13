@@ -23,7 +23,7 @@ What is mean total number of steps taken per day?
     hist(steps.per.day)
 
 
-![Histogram Step By Day](data-science-images/hist-stepbyday.png) 
+![Histogram Step By Day](images/hist-stepbyday.png) 
 Calculate and report the mean and median of the total number of steps
 taken per day
 
@@ -47,7 +47,7 @@ What is the average daily activity pattern?
     avgstepsinterval <- tapply(data$steps, data$interval, "mean", na.rm = TRUE)
     plot(names(avgstepsinterval), avgstepsinterval, type = "l")
 
-![](data-science-images/blob/master/avg-daily-activ.png?raw=true)
+![Average daily activity](images/avg-daily-activ.png?raw=true)
 
     # Which 5-minute interval, on average across all the days in the dataset,
     # contains the maximum number of steps?
@@ -93,7 +93,7 @@ Imputing missing values
          ylim=c(0, 50), 
          main="The total number of steps taken each day")
 
-![](data-science-images/blob/master/total-number-of-steps.png?raw=true)
+![Total Number of Steps](images/total-number-of-steps.png?raw=true)
 <h2>
 Are there differences in activity patterns between weekdays and
 weekends?
@@ -107,4 +107,5 @@ weekends?
     xyplot(intervalSteps$steps ~ intervalSteps$interval | intervalSteps$dow, main = "Average Steps per Day by Interval", 
         xlab = "Interval", ylab = "Steps", layout = c(1, 2), type = "l")
 
-![](data-science-images/blob/master/avgStepsPerDay.png?raw=true)
+![Average Steps Per Day](images/avgStepsPerDay.png?raw=true)
+
